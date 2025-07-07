@@ -90,7 +90,7 @@ const Page = () => {
           )}
               {show && filename== "services" && (
             <h1 className=" text-yellow-100/50 font-sans font-bold  animate-hover w-full line-clamp flex justify-center  text-2xl">
-            So what do we offer ? ¯\_(ツ)_/¯  we offer a large range of products from websites like this, mobile apps like wheres the link when you need it anyways you get the picture ,games and occasionally once a year on a summer night short form animated advertisement------------------------------ ༼ つ ◕_◕ ༽つanddddddd stuff .
+            ¯\_(ツ)_/¯  So what do we offer ? we offer a large range of products from websites like this, mobile apps like wheres the link when you need it anyways you get the picture ,games and occasionally once a year on a summer night short form animated advertisement------------------------------ ༼ つ ◕_◕ ༽つanddddddd stuff .
             </h1>
           )}
               {show && filename== "vision" && (
@@ -100,8 +100,8 @@ const Page = () => {
           )}
               {show && filename== "inspiration 4 design" && (
             <h1 className="text-yellow-100/50 font-bold  font-sans animate-hover w-full flex justify-center in text-3xl">
-i was initial gonna showcase the pc model that inspired the design ༼ つ ◕_◕ ༽つbutttt the we are low on staff (uses excuse to hide laziness (¬‿¬) check ☑) so maybe next time im off now thanks for reading
-.            </h1>
+i was initial gonna showcase the pc model that inspired the design ༼ つ ◕_◕ ༽つbutttt we are low on staff (uses excuse to hide laziness (¬‿¬) check ☑) so maybe next time im off now thanks for reading
+friend .            </h1>
           )}
 
            {show && filename== "descript dev edition ༼ つ ◕_◕ ༽つ" && (
@@ -112,7 +112,7 @@ i was initial gonna showcase the pc model that inspired the design ༼ つ ◕_�
 
            {show && filename== "skills" && (
             <h1 className="text-yellow-100/60 font-sans   animate-hover w-full flex justify-center font-bold text-[18.4px] text-balance ">
-            ╰(*°▽°*)╯i primarily utilize javascript as my go to language, with backgrounds in python ,java ,dart through working on a considerable number of projects, i have developed a decent level of proficiency in these langauges. Additionally i have experience with frameworks and libraries such as python(Django,pandas,pyautogui,shutil,os,...) dart(flutter) Javascript (react, ----------------༼ つ ◕_◕ ༽つnext js ,react native,...) (¬‿¬) soft skills anyone? alright here i go im good at time management ,im a faster learner and autodidact ,researching is my strong suit ,good with a team .</h1>
+            ╰(*°▽°*)╯i primarily utilize javascript as my go to language, with backgrounds in python ,java ,dart ,Through working on a considerable number of projects, i have developed a decent level of proficiency in these langauges. Additionally i have experience with frameworks and libraries such as python(Django,pandas,pyautogui,shutil,os,...) dart(flutter) Javascript (react, --------------------༼ つ ◕_◕ ༽つnext js ,react native,...) (¬‿¬) soft skills anyone? alright here i go im good at time management ,im a faster learner and autodidact ,researching is my strong suit ,good with a team .</h1>
           )}
 
            {show && filename== "achivements" && (
