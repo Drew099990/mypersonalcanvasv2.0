@@ -4,6 +4,7 @@ import Image from "next/image";
 import img from "../public/sleepy.jpg"; // Adjust the path as necessary
 
 import Menu from "./components/Nav/page";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,13 +28,13 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} bg-gray-300 text-black/90 ${geistMono.variable} antialiased`}
       >
         <header className="bg-[#474a47] flex justify-between border-double border-t-12 border-b-12 ring-1 ring-white border-[#232323]/90 b p-3 shadow-2xl ">
-          <a href="/" className="flex items-center gap-3 bg-[#D2D0D0FF] w-fit rounded-2xl mx-4 px-2">
+          <Link href="/" className="flex items-center gap-3 bg-[#D2D0D0FF] w-fit rounded-2xl mx-4 px-2">
             <Image className="rounded-[50%]" src={img} width={30} height={30} alt="Sleepy Panda Logo" />
             <div>
               <h1 className="font-bold leading-tight">sleepy</h1>
               <h1 className="font-bold leading-tight  font-sans  text-green-800">panda</h1>
             </div>
-          </a>
+          </Link>
 
          <Menu />
         </header>
