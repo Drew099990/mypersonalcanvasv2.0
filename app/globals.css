@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --animate-dot: dot 5s alternate ease-in-out forwards infinite;
+--animate-dot2: dot2 6s alternate ease-in-out forwards infinite;
+  --animate-in: in 1s ease-in-out;
+  --animate-hover: hover 2s ease-in-out infinite;
+
+@keyframes hover {
+
+  50%{
+    transform:translate(0,10)
+  }
+  
+}
+
+  @keyframes in {
+    from{
+      opacity: 0.6;
+      transform:scale(0.9);
+    }
+    
+  }
+
+@keyframes dot2 {
+  0%{
+    opacity: 0.7;
+  }
+
+  25%{
+    content:"loading bios..."
+  }
+  
+   50%{
+    content:"setting up configuration ..."
+  }
+  
+   75%{
+    content:"optimizing memory ... "
+  }
+  
+}
+@keyframes dot {
+    0%{
+    opacity: 0.7;
+  }
+
+  25%{
+    content:"."
+  }
+  
+   50%{
+    content:".."
+  }
+  
+   75%{
+    content:"..."
+  }
+  
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f2f2f2;
+    --foreground: #020202;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
