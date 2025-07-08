@@ -4,7 +4,7 @@ import React from 'react'
 import { FaWhatsapp } from "react-icons/fa";
 const Menu = () => {
   return (
- <div className="flex  gap-5 h-7 max-[55rem]:scale-90 rounded-2xl h-fit p-4 border  border-gray-800 text-gray-300 ">
+ <div className="flex  gap-5 h-7 max-[55rem]:scale-90 rounded-2xl h-fit px-4 p-1 border  border-gray-800 text-gray-300 ">
             <Link href="/about" className="font-bold  border-gray-600 border-x-2 px-1 leading-tight bg-gradient-to-r from-gray-500 hover:opacity-65  opacity-30 " >About</Link>
             <Link href="/PaS" className="font-bold  border-gray-600 border-x-2 px-1  leading-tight bg-gradient-to-r from-gray-500 hover:opacity-65 opacity-30 to-[#474a47]" >Inventory </Link>
             <Link href="/blog" className="font-bold  border-gray-600 border-x-2 px-1 leading-tight bg-gradient-to-r from-gray-500 hover:opacity-65 opacity-30 to-[#474a47]" >blog</Link> 
