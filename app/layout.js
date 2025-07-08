@@ -39,7 +39,8 @@ export default function RootLayout({ children }) {
          <Menu />
         </header>
         {children}
-        <div className="bg-[#474a47] text-white/60 border-dashed h-18 border-t-12 flex justify-center border-[#232323]/80 b p-3 shadow-2xl shadow-amber-50">
+        <div className="bg-[#474a47]  text-white/60 border-dashed h-fit border-t-12 flex flex-col justify-center items-center border-[#232323]/80 b p-3 shadow-2xl shadow-amber-50">
+          <Menu></Menu>
           <div className="rounded-2xl border p-1 border-[#454545] bg-[#373937]/80">© 2025{new Date().getFullYear() == 2025? "":new Date().getFullYear() } Sleepy Panda All rights Reserved</div>
         </div>
       </body>
