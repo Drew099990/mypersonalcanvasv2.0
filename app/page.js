@@ -12,11 +12,11 @@ export default function Home() {
       />
 
    <div>
-       <h1 className="fixed max-md:scale-60 bottom-0 h-60 bg-black/80 right-10 text-green-600/30 opacity-80 rounded-b-2xl tracking-wider text-6xl">
+       <h1 className="fixed max-md:scale-80 bottom-0 max-sm:bottom-[-20] h-60 bg-black/80 right-10 text-green-600/30 opacity-80 rounded-b-2xl tracking-wider text-6xl">
         /
       </h1>
       <Image
-        className="fixed max-md:scale-90 border rounded-2xl max-sm:bottom-40 min-sm:bottom-50 right-4 opacity-85 text-6xl"
+        className="fixed z-30 max-md:scale-90 border rounded-2xl max-sm:bottom-40 min-sm:bottom-50 right-4 opacity-85 text-6xl"
         src={img}
         width={70}
         height={70}
@@ -24,11 +24,11 @@ export default function Home() {
       />
 
    </div>
-      <h1 className="fixed top-60 max-md:scale-80  left-10 text-green-600/40 rotate-290 bg-amber-950/40 tracking-wider text-6xl font-serif">
+      <h1 className="fixed max-sm:top-30 min-sm:top-60 max-md:scale-80  left-10 text-green-600/40 rotate-290 bg-amber-950/40 tracking-wider text-6xl font-serif">
         my
       </h1>
       <h1
-        className="fixed top-130 left-50 max-md:scale-60 text-green-600/30 rotate-10 tracking-wider text-[6rem]"
+        className="fixed min-sm:top-130 max-sm:bottom-15 max-sm:left-10 min-sm:left-50 max-md:scale-60 text-green-600/30 rotate-10 tracking-wider text-[6rem]"
         style={{ fontFamily: "cursive" }}
       >
         personal
@@ -38,11 +38,11 @@ export default function Home() {
       </h1>
 
       <div className="w-screen flex justify-center items-start">
-        <h1 className="fixed max-md:scale-80 bg-red-800/60 font-extrabold text-2xl text-amber-50 z-10 top-35 p-2 border-4 border-[#3f3e3e]">
+        <h1 className="fixed max-md:scale-50 bg-red-800/60 font-extrabold text-2xl text-amber-50 z-10 max-sm:top-23 min-sm:top-35 p-2 border-4 border-[#3f3e3e]">
           get in touch
         </h1>
 
-        <div className="bg-[#2E2E2EFF]/100 max-md:scale-70 max-md:flex-col-reverse max-md:h-fit text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-sm:h-[50vh] min-w-fit fixed max-sm:top-[160px] min-sm:top-[220px]">
+        <div className="bg-[#2E2E2EFF]/100 max-md:scale-70 max-md:flex-col-reverse max-md:h-fit text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-sm:h-[50vh] min-w-fit fixed max-sm:top-[70px] min-sm:top-[220px]">
 
           <div className="flex-1/3  gap-y-4 py-5 justify-baseline items-start p-4 font-bold  flex flex-col">
           
