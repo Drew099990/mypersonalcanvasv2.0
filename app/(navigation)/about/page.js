@@ -86,7 +86,7 @@ const Page = () => {
             
               {show && filename== "discription" && (
             <h1 className="line-clamp text-yellow-100/50 font-sans font-bold  animate-hover w-full flex justify-center text-3xl">
-           Sleepy panda is a platform /company ------------------------------༼ つ ◕_◕ ༽つ༼  focused on making creative software solutions that dont only fix your problems(⌐■_■) ,but ( •_•){">"}⌐■-■ makes you feel something while doing it ,welcome Home (●'◡'●) .</h1>
+           Sleepy panda is a platform /company ------------------------------༼ つ ◕_◕ ༽つ༼  focused on making creative software solutions that dont only fix your problems(⌐■_■) ,but ( •_•){">"}⌐■-■ makes you feel something while doing it ,welcome Home (●&apos;◡&apos;●) .</h1>
           )}
               {show && filename== "services" && (
             <h1 className=" text-yellow-100/50 font-sans font-bold  animate-hover w-full line-clamp flex justify-center  text-2xl">
@@ -95,7 +95,7 @@ const Page = () => {
           )}
               {show && filename== "vision" && (
             <h1 className="text-yellow-100/50 font-sans font-bold  animate-hover w-full flex justify-center font-in text-2xl">
-              we simply  ༼ つ ◕_◕ ༽つ actually its actually just me yeaaaa my main goal is to make quality software that adds to one,s wellbeing and overall i simply want to make software that makes people feel something and kick ass while doing it hopefully overtime we can touch more people (╯°□°）╯ with consent of cause (¬‿¬) .          </h1>
+              we simply  ༼ つ ◕_◕ ༽つ actually its actually just me yeaaaa my main goal is to make quality software that adds to one&#39;s wellbeing and overall i simply want to make software that makes people feel something and kick ass while doing it hopefully overtime we can touch more people (╯°□°）╯ with consent of cause (¬‿¬) .          </h1>
             
           )}
               {show && filename== "inspiration 4 design" && (
