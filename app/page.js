@@ -40,7 +40,7 @@ export default function Home() {
           get in touch
         </h1>
 
-        <div className="bg-[#2E2E2EFF]/100  text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black h-[50vh] min-w-fit fixed top-[220px]">
+        <div className="bg-[#2E2E2EFF]/100 max-md:scale-60 text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black h-[50vh] min-w-fit fixed top-[220px]">
 
           <div className="flex-1/3  gap-y-4 py-5 justify-baseline items-start p-4 font-bold  flex flex-col">
           

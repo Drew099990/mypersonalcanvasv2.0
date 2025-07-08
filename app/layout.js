@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} bg-gray-300 text-black/90 ${geistMono.variable} antialiased`}
       >
-        <header className="bg-[#474a47] flex justify-between border-double border-t-12 border-b-12 ring-1 ring-white border-[#232323]/90 b p-3 shadow-2xl ">
+        <header className="bg-[#474a47] max-sm:justify-center flex min-sm:justify-between border-double border-t-12 border-b-12 ring-1 ring-white border-[#232323]/90 b p-3 shadow-2xl ">
           <Link href="/" className="flex max-md:px-2 max-md:scale-75 items-center gap-3 bg-[#D2D0D0FF] w-fit rounded-2xl mx-4 px-2">
             <Image className="rounded-[50%]" src={img} width={30} height={30} alt="Sleepy Panda Logo" />
             <div>
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         </header>
         {children}
         <div className="bg-[#474a47]  text-white/60 border-dashed h-fit border-t-12 flex flex-col justify-center items-center border-[#232323]/80 b p-3 shadow-2xl shadow-amber-50">
-          <Menu></Menu>
+       <div className="min-sm:hidden">   <Menu></Menu></div>
           <div className="rounded-2xl border p-1 border-[#454545] bg-[#373937]/80">© 2025{new Date().getFullYear() == 2025? "":new Date().getFullYear() } Sleepy Panda All rights Reserved</div>
         </div>
       </body>
