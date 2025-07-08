@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import img from "../public/sleepy.jpg"; // Adjust the path as necessary
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,11 +13,11 @@ export default function Home() {
       />
 
    <div>
-       <h1 className="fixed max-md:scale-80 bottom-0 max-sm:bottom-[-20] h-60 bg-black/80 right-10 text-green-600/30 opacity-80 rounded-b-2xl tracking-wider text-6xl">
+       <h1 className="fixed max-md:scale-80 bottom-0 max-sm:bottom-[-20] h-60 bg-black/80 right-10 text-green-600/30 opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
         /
       </h1>
       <Image
-        className="fixed z-30 max-md:scale-90 border rounded-2xl max-sm:bottom-40 min-sm:bottom-50 right-4 opacity-85 text-6xl"
+        className="fixed z-60 max-md:scale-90 border rounded-2xl max-sm:bottom-40 min-sm:bottom-50 right-4 opacity-85 text-6xl"
         src={img}
         width={70}
         height={70}
@@ -38,11 +39,11 @@ export default function Home() {
       </h1>
 
       <div className="w-screen flex justify-center items-start">
-        <h1 className="fixed max-md:scale-50 bg-red-800/60 font-extrabold text-2xl text-amber-50 z-10 max-sm:top-23 min-sm:top-35 p-2 border-4 border-[#3f3e3e]">
+        <h1 className="fixed max-md:scale-50 bg-red-800/60 font-extrabold text-2xl text-amber-50 z-10 max-sm:top-28 min-sm:top-35 p-2 border-4 border-[#3f3e3e]">
           get in touch
         </h1>
 
-        <div className="bg-[#2E2E2EFF]/100 max-md:scale-70 max-md:flex-col-reverse max-md:h-fit text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-sm:h-[50vh] min-w-fit fixed max-sm:top-[70px] min-sm:top-[220px]">
+        <div className="bg-[#2E2E2EFF]/100 max-md:scale-70 max-md:flex-col-reverse max-md:h-fit text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-w-fit fixed max-md:top-[80px] min-md:top-[220px]">
 
           <div className="flex-1/3  gap-y-4 py-5 justify-baseline items-start p-4 font-bold  flex flex-col">
           
@@ -55,12 +56,19 @@ export default function Home() {
            <a className="cursor-none text-[11px]" >location : Kitwe , Zambia</a>
         </div>
           
-          <div className="bg-[#D2D0D0FF]  text-black/90 flex-2/3 min-w-fit overflow-hidden">
-          <form className="p-4 py-10 flex flex-col gap-4"> 
+          <div className="bg-[#D2D0D0FF]  text-black/90 flex flex-col justify-center items-center  flex-2/3 min-w-fit overflow-hidden">
+            <Link href="/" className="flex max-md:px-2 z-20 max-md:scale-90 max-md:opacity-90 max-md:border border-r-gray-700 items-center gap-3 bg-[#D2D0D0FF] w-fit rounded-2xl my-5 px-2">
+            <Image className="rounded-[50%]" src={img} width={30} height={30} alt="Sleepy Panda Logo" />
+            <div>
+              <h1 className="font-bold max-md:scale-75  leading-tight">sleepy</h1>
+              <h1 className="font-bold max-md:scale-75 leading-tight  font-sans  text-green-800">panda</h1>
+            </div>
+          </Link>
+          <form className="p-4 min-md:py-10 max-md:py-0 flex flex-col gap-4"> 
            
            <h1 className="text-center underline font-bold opacity-85 ">leave a message</h1>
            <div className="flex"> <label>your Name :</label>
-            <input type="text" className=" h-10 mt-5 border-b-2 px-4 w-25"></input>
+            <input type="text" className=" h-10 m border-b-2 px-4 w-25"></input>
              <label>Email :</label>
             <input type="email" required className="border-b-2  h-10 mt-5 px-4"></input>
             </div>
