@@ -13,7 +13,7 @@ export default function Home() {
       />
 
    <div>
-       <h1 className="fixed max-md:scale-80 bottom-0 max-sm:bottom-[-20] h-60 bg-black/80 right-10 text-green-600/30 opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
+       <h1 className="fixed max-md:scale-80 bottom-0 max-sm:bottom-[-20] h-60 max-md:bg-[#1a1919] min-md:bg-black/80 right-10 text-green-600/30 max-md:opacity-100 min-md:opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
         /
       </h1>
       <Image
@@ -56,7 +56,7 @@ export default function Home() {
            <a className="cursor-none text-[11px]" >location : Kitwe , Zambia</a>
         </div>
           
-          <div className="bg-[#D2D0D0FF]  text-black/90 flex flex-col justify-center items-center  flex-2/3 min-w-fit overflow-hidden">
+          <div className="bg-[#D2D0D0FF] p-3  text-black/90 flex flex-col justify-center items-center  flex-2/3 min-w-fit overflow-hidden">
             <Link href="/" className="flex max-md:px-2 min-md:invisible z-20 max-md:scale-90 max-md:opacity-90 max-md:border border-gray-400 items-center gap-3 bg-[#D2D0D0FF] w-fit rounded-2xl my-5 px-2">
             <Image className="rounded-[50%]" src={img} width={30} height={30} alt="Sleepy Panda Logo" />
             <div>
