@@ -13,7 +13,7 @@ export default function Home() {
       />
 
    <div>
-       <h1 className="fixed max-md:scale-80 bottom-0 max-sm:bottom-[-20] h-60 max-md:bg-[#1a1919] min-md:bg-black/80 right-10 text-green-600/30 max-md:opacity-100 min-md:opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
+       <h1 className="fixed max-md:scale-80 bottom-0 max-sm:bottom-[-21] h-60 max-md:bg-[#1a1919] min-md:bg-black/80 right-10 text-green-600/30 max-md:opacity-100 min-md:opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
         /
       </h1>
       <Image
