@@ -13,11 +13,11 @@ export default function Home() {
       />
 
    <div>
-       <h1 className="fixed max-md:scale-80 mx-4 bottom-0 max-sm:bottom-[-21] h-60 max-md:bg-[#1a1919] min-md:bg-black/80 right-10 text-green-600/30 max-md:opacity-100 min-md:opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
+       <h1 className="fixed max-md:hidden mx-4 bottom-0 max-sm:bottom-[-21] h-60 max-md:bg-[#1a1919] min-md:bg-black/80 right-10 text-green-600/30 max-md:opacity-100 min-md:opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
         /
       </h1>
       <Image
-        className="fixed z-60 max-md:scale-90 border rounded-2xl max-sm:bottom-40 min-sm:bottom-50 right-7 opacity-85 text-6xl"
+        className="fixed z-60 max-md:hidden border rounded-2xl max-sm:bottom-40 min-sm:bottom-50 right-7 opacity-85 text-6xl"
         src={img}
         width={70}
         height={70}

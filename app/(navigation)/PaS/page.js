@@ -4,38 +4,64 @@ import img from '../../../public/sleepy.jpg';
 
 const services = [
   {
-    title: 'Web Development',
+    title: 'Studypal',
     description:
-      'We build modern, responsive, and scalable web applications tailored to your business needs. Our expertise covers everything from landing pages to complex web platforms.',
-    examples: [
-      'Portfolio Website',
-      'E-commerce Platform',
-      'Company Landing Page',
+      'Is an Ai powered study tool that aids making studying as effiecient as possible with everything you need all in one place .',
+    mylink:"",  
+    Features: [
+      'Specialized Ai tutor',
+      'Scheduling feature',
+      'Career path advice',
+      "Interactive minigames"
     ],
     img: img,
+    status:false
   },
-  {
-    title: 'Web Development',
+    {
+    title: 'Huddle',
     description:
-      'We build modern, responsive, and scalable web applications tailored to your business needs. Our expertise covers everything from landing pages to complex web platforms.',
-    examples: [
-      'Portfolio Website',
-      'E-commerce Platform',
-      'Company Landing Page',
+      'Is a community based platform that aims to safe space for people to push and grow together and improve daily while offering them all the tools they will need on their journey .',
+    mylink:"",  
+    Features: [
+      "Access to countless number of books to download or read",
+      'Specialized Ai planner generator for workout,reading,medidation ... ',
+      'Personal journal/dairy for personal thoughts',
+      'Community blog ',
+      "Recommended videos and audiobooks for you"
     ],
     img: img,
+    status:false
   },
-  {
-    title: 'Web Development',
+    
+ {
+    title: 'WorkAuto',
     description:
-      'We build modern, responsive, and scalable web applications tailored to your business needs. Our expertise covers everything from landing pages to complex web platforms.',
-    examples: [
-      'Portfolio Website',
-      'E-commerce Platform',
-      'Company Landing Page',
+      'Is a platform that offers countless number of mini courses and challenges to aid in teaching you the fundamentals of automation using python,javacript,java and lua in a fun educational way ,Hey!!!! dont touch that lets automate it instead.',
+    mylink:"",  
+    Features: [
+      "Fundamentals of the java,python,javascript and lua",
+      'Countless fully packed courses ',
+      'Automation idea generator',
+      
     ],
     img: img,
+    status:false
   },
+       {
+    title: 'myQuickCV',
+    description:
+      'is a website that aids you get your dream job by aiding you with the first steps on your path.',
+    mylink:"",  
+    Features: [
+      'AI resume/cv generator',
+      'AI resume/cv rating  ',
+      'Career path advice',
+      
+    ],
+    img: img,
+    status:false
+  },
+ 
 ];
 
 const Product_and_Services = () => {
@@ -64,13 +90,15 @@ const Product_and_Services = () => {
                 </h2>
               </div>
               <p className="text-gray-200 mb-2">{service.description}</p>
-              <h3 className="font-bold text-lg text-gray-100 mb-1">Details:</h3>
+              <a className='flex gap-1' href={service.mylink}>check it out  --------------------------༼ つ ◕_◕ ༽つ<h1 className='hover:text-gray-400'>Here</h1></a>
+              <h3 className="font-bold text-lg text-gray-100 mb-1">Features:</h3>
               <ul className="list-disc pl-5 text-gray-300 space-y-1">
-                {service.examples.map((ex, i) => (
+                {service.Features?.map((ex, i) => (
                   <li key={i}>{ex}</li>
                 ))}
               </ul>
             </div>
+            <div className="flex gap-4"> Status:{service.status == true?<h1 className='text-green-300'>Available For Use</h1>:<h1 className='text-red-300'>In Development</h1>}</div>
           </div>
         ))}
       </div>

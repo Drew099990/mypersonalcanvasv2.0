@@ -5,7 +5,7 @@ const stories = [
     title: "My portfolio website",
     client: "Self",
     description:
-      " created my new portfolio website v2 if you ------------------༼ つ ◕_◕ ༽つmay ,as the first order of business.",
+      " created my new portfolio website v2 if you -----------------------------------༼ つ ◕_◕ ༽つMAY ,as the first order of business.",
     date: "july 2025",
   },
 
