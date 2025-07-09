@@ -20,20 +20,20 @@ useEffect(()=>{
 function selector (e){
     const selected = e.target.textContent
  switch(selected){
-    case "about":{
+    case "1-about":{
         setLogo(false)
         setMessage("about")
     }
         break;
-    case "skills":{
+    case "3-skills":{
         setLogo(false)
         setMessage("skills")};
         break;
-    case "achive":{
+    case "5-achive":{
         setLogo(false)
         setMessage("achive")};
         break;
-    case "vision":{
+    case "8-vision":{
         setLogo(false)
         setMessage("vision")};
         break;
