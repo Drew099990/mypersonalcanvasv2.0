@@ -13,6 +13,7 @@ export default function Home() {
       />
 
    <div>
+          <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8563885250863599" crossorigin="anonymous"></script></head>
        <h1 className="fixed max-md:hidden mx-4 bottom-0 max-sm:bottom-[-21] h-60 max-md:bg-[#1a1919] min-md:bg-black/80 right-10 text-green-600/30 max-md:opacity-100 min-md:opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
         /
       </h1>
