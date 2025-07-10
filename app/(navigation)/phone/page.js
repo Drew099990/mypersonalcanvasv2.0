@@ -7,7 +7,7 @@ import img from "../../../public/sleepy.jpg"
 const Sleepy = () => {
     
     const [isON,setISON] = useState(false)
-    const button = ["about",2,"skills",4,"achive",6,7,"vision",9,]
+    const button = ["1-about",2,"3-skills",4,"5-achive",6,7,"8-vision",9,]
     const [logo ,setLogo] = useState(false);
     const [message,setMessage] = useState("");
 

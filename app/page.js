@@ -43,7 +43,7 @@ export default function Home() {
           get in touch
         </h1>
 
-        <div className="bg-[#2E2E2EFF]/100 max-md:scale-70 max-md:flex-col-reverse max-md:h-fit text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-w-fit fixed max-md:top-[80px] min-md:top-[220px]">
+        <div className="bg-[#2E2E2EFF]/100 mx-5 max-md:scale-70 max-md:flex-col-reverse max-md:h-fit text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-w-fit fixed max-md:top-[80px] min-md:top-[220px]">
 
           <div className="flex-1/3  gap-y-4 py-5 justify-baseline items-start p-4 font-bold  flex flex-col">
           
@@ -67,7 +67,7 @@ export default function Home() {
           <form className="p-4 min-md:py-10 max-md:py-0 flex flex-col gap-4"> 
            
            <h1 className="text-center underline font-bold opacity-85 ">leave a message</h1>
-           <div className="flex"> <label>your Name :</label>
+           <div className="flex opacity-85"> <label>your Name :</label>
             <input type="text" className=" h-10 m border-b-2 px-4 w-25"></input>
              <label>Email :</label>
             <input type="email" required className="border-b-2  h-10 mt-5 px-4"></input>
