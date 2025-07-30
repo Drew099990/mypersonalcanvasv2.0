@@ -1,5 +1,6 @@
-import { mutation } from "_generated/server";
+import { mutation } from "./_generated/server";
 import { v } from "convex/values";
+import { query } from "./_generated/server";
 
 export const sendMessage = mutation({
   args: {
@@ -15,3 +16,9 @@ export const sendMessage = mutation({
     });
   },
 });
+
+const getMessages = query ({
+  args: {}, 
+  handler: async (ctx) => {
+    return await ctx.db.query("messages").collect();
+  }, });

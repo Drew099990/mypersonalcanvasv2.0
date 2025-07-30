@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import img from "../public/sleepy.jpg"; // Adjust the path as necessary
-
+import { ConvexClientProvider } from "./ConvexClientProvider";
 import Menu from "./components/Nav/page";
 import Link from "next/link";
 

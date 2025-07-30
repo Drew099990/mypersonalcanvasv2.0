@@ -4,6 +4,13 @@ import img from "../public/sleepy.jpg"; // Adjust the path as necessary
 import Link from "next/link";
 
 export default function Home() {
+
+
+
+
+
+
+  
   return (
     <div>
       
@@ -66,7 +73,7 @@ export default function Home() {
           </Link>
           <form className="p-4 min-md:py-10 max-md:py-0 flex flex-col gap-4"> 
            
-           <h1 className="text-center underline font-bold opacity-85 ">leave a message</h1>
+           <h1 className="text-center underline font-bold opacity-85 opacity-80">leave a message</h1>
            <div className="flex opacity-85"> <label>your Name :</label>
             <input type="text" className=" h-10 m border-b-2 px-4 w-25"></input>
              <label>Email :</label>
