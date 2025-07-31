@@ -1,12 +1,13 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
+import { FaArrowDown } from 'react-icons/fa';
 
 const Page = () => {
   const [show, setShowScreen] = useState(false);
   const [powerON, setPowerON] = useState(false);
   const [role, setRole] = useState("vistor");
   const [filename,setFilename] = useState("")
-
+  const [info,setinfo] = useState(true)
   function on() {
     if (show === true) {
       setPowerON(false);
@@ -32,6 +33,7 @@ const Page = () => {
 
     const handleDragOver = (e) => {
       e.preventDefault();
+      setinfo(!info)
     };
     const handleDrop = (e) => {
       e.preventDefault();
@@ -136,16 +138,21 @@ friend .            </h1>
             >
               ⨀
             </button>
-          <div className="w-140 rounded-2xl opacity-70 flex gap-4  border-2 text-white border-black bg-black/60 relative top-5 right-50 h-20 ">
+          <div className="w-140 rounded-2xl opacity-70 flex gap-4 max-[96rem]:hidden   border-2 text-white border-black bg-black/60 relative top-5 right-50 h-20 ">
             <h1 className="text-2xl font-bold text-gray-600 bg-clip-text bg-gradient-to-r from-gray-900 via-white to-gray-200 text-center flex justify-center items-center ml-40">
               my personal canvas v2
             </h1>
             
             {/* tiny shelf */}
-            <div className="w-fit flex-col gap-4 text-transparent border-black rounded-t-2xl relative bottom-30 left-[42rem] h-fit bg-transparent bg-gradient-to-t ">
+            <div className="w-fit flex-col gap-4 text-transparent border-black rounded-t-2xl relative bottom-39 left-[42rem] h-fit bg-transparent bg-gradient-to-t ">
+             <div>
+            {info ?  <h1 className="text-blue-200 px-5 opacity-80 py-1 rounded-2xl fa animate-bounce font-bold italic text-balance bg-gray-500">turn the pc on and place these inside <FaArrowDown/></h1>
+             : <h1 className="text-blue-200 px-5 py-1 rounded-2xl fa animate-bounce font-bold italic text-balance bg-gray-500"> </h1>
+             }
+             </div>
               <div
                 {...makeDraggable("chip1")}
-                className="text-black from-[#2E2E2EFF]  via-[#f2f2f2]   to-[#2E2E2EFF] border-2 bg-gradient-to-t mt-10 flex-1 border-2  px-3 my-2 h-8"
+                className="text-black from-[#2E2E2EFF]  via-[#f2f2f2]   to-[#2E2E2EFF] border-2 bg-gradient-to-t mt-1 flex-1 border-2  px-3 my-2 h-8"
               >
                    {role === "vistor" ? "discription" : "descript dev edition ༼ つ ◕_◕ ༽つ"}
             </div>

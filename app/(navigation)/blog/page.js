@@ -5,8 +5,14 @@ const stories = [
     title: "My portfolio website",
     client: "Self",
     description:
-      " created my new portfolio website v2 if you -----------------------------------༼ つ ◕_◕ ༽つMAY ,as the first order of business.",
-    date: "july 2025",
+      " created my new portfolio website v2 if you ----------------------------------༼ つ ◕_◕ ༽つMAY ,as the first order of business.",
+    date: "10 july 2025",
+  },  {
+    title: "The Red Game",
+    client: "community",
+    description:
+      " almost wraping up the game a few more feature to be added and it will be ready for play testing -----------------------------------༼ つ ◕_◕ ༽つMAY ,as the first order of business.",
+    date: "31 july 2025",
   },
 
 ];
@@ -22,7 +28,7 @@ const Blog = () => {
             className="bg-[#2E2E2EFF]/100 text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-h-[220px] min-w-fit rounded-2xl shadow-xl p-6 flex-col justify-between"
           >
             <div>
-              <h2 className="text-xl font-bold text-green-200 mb-2 underline underline-offset-4">{story.title}</h2>
+              <h2 className="text-xl font-bold text-green-200 mb-2 underline underline-offset-4 opacity-85">{story.title}</h2>
               <p className="text-gray-200 mb-1"><span className="font-bold">Client:</span> {story.client}</p>
               <p className="text-gray-300 mb-3">{story.description}</p>
             </div>
