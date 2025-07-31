@@ -20,20 +20,20 @@ useEffect(()=>{
 function selector (e){
     const selected = e.target.textContent
  switch(selected){
-    case "about":{
+    case "1-about":{
         setLogo(false)
         setMessage("about")
     }
         break;
-    case "skills":{
+    case "3-skills":{
         setLogo(false)
         setMessage("skills")};
         break;
-    case "achive":{
+    case "5-achive":{
         setLogo(false)
         setMessage("achive")};
         break;
-    case "vision":{
+    case "8-vision":{
         setLogo(false)
         setMessage("vision")};
         break;
@@ -55,7 +55,7 @@ d
  </div>  }<div className='text-black'>
     {message == "about" && <p className='flex justify-center items-center p-2'>i am a full stack web and game developer who focuses on bringing a unique creative feel to every project ,with 2 years experience perfecting and adapting new lessons along tthe way </p>}
     {message == "skills" && <p className='flex justify-center items-center p-2'>
-       i_mainly_utilze () {"{ if (main language) ༼ つ ◕_◕ ༽つ{javascript == "+"'react,next js'}   else         { python = 'django,pyautogui,kivy'; dart == 'flutter'; lua = 'love2d'; java = '';}}"}
+       i_mainly_utilze () {"{ if (main language) ༼ つ ◕_◕ ༽つ{javascript == "+"'react,next js'}   else         { python == 'django,pyautogui,kivy'; dart == 'flutter'; lua == 'love2d'; java == '';}}"}
         </p>}
     {message == "achive" && <p className='flex justify-center items-center p-2'> 1) ༼ つ ◕_◕ ༽つHCIA artificial intelligence certificate
         2) ------------༼ つ ◕_◕ ༽つkaggle intro to deep learning certificate</p>}

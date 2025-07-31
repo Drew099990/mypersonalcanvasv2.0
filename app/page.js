@@ -20,6 +20,7 @@ export default function Home() {
       />
  <Analytics/>
    <div>
+          <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8563885250863599" crossorigin="anonymous"></script></head>
        <h1 className="fixed max-md:hidden mx-4 bottom-0 max-sm:bottom-[-21] h-60 max-md:bg-[#1a1919] min-md:bg-black/80 right-10 text-green-600/30 max-md:opacity-100 min-md:opacity-80 rounded-b-2xl tracking-wider text-6xl z-50">
         /
       </h1>
@@ -50,8 +51,10 @@ export default function Home() {
           get in touch
         </h1>
 
+
         <div className="bg-[#2E2E2EFF]/100 mx-5 max-md:scale-70 max-md:flex-col-reverse max-md:h-fit text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-w-fit fixed max-md:top-[80px] min-md:top-[220px]">
 
+  
           <div className="flex-1/3  gap-y-4 py-5 justify-baseline items-start p-4 font-bold  flex flex-col">
           
           <h1 className="underline underline-offset-8">contact info</h1>
