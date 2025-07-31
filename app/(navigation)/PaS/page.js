@@ -98,7 +98,7 @@ const Product_and_Services = () => {
                 ))}
               </ul>
             </div>
-            <div className="flex gap-4"> Status:{service.status == true?<h1 className='text-green-300'>Available For Use</h1>:<h1 className='text-red-300'>In Development</h1>}</div>
+            <div className="flex gap-4 ."> Status:{service.status == true?<h1 className='text-green-300'>Available For Use</h1>:<h1 className='text-red-300'>In Development</h1>}</div>
           </div>
         ))}
       </div>
