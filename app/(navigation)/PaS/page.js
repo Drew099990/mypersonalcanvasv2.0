@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import img from '../../../public/sleepy.jpg';
-import img2 from "../../../public/menu .png"
-
 const services = [
   {
     title: 'Studypal',
@@ -77,7 +75,7 @@ const Games = [
       'platforms',
       "entertainment"
     ],
-    img: img2,
+    img: img,
     status:false}]
 
 const Product_and_Services = () => {
