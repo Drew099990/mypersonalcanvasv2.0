@@ -14,11 +14,20 @@
 --animate-dot2: dot2 6s alternate ease-in-out forwards infinite;
   --animate-in: in 1s ease-in-out;
   --animate-hover: hover 2s ease-in-out infinite;
+  --animate-hover2: hover2 2s ease-in-out infinite;
+  
 
 @keyframes hover {
 
   50%{
     transform:translate(0,10)
+  }
+  
+}
+@keyframes hover2 {
+
+  50%{
+    transform:translate(0,4)
   }
   
 }
@@ -71,7 +80,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #242924;
+    --background: #212221;
     --foreground: #020202;
   }
 }

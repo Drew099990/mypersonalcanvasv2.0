@@ -2,7 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import img from '../../../public/sleepy.jpg';
 import img2 from "../../../public/menu .png"
-
+import { CiCircleChevDown } from "react-icons/ci";
+import { FaAngleDoubleDown, FaAngleDoubleUp, FaAngleDown } from 'react-icons/fa';
+import Link from 'next/link';
 const services = [
   {
     title: 'Studypal',
@@ -83,12 +85,20 @@ const Games = [
 const Product_and_Services = () => {
   return (
     <div className="min-h-[90vh] scroll-smooth bg-[#242924] flex flex-col justify-center items-center bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2742%27%20height%3D%2744%27%20viewBox%3D%270%200%2042%2044%27%20xmlns%3D%27http://www.w3.org/2000/svg%27%3E%3Cg%20id%3D%27Page-1%27%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20id%3D%27brick-wall%27%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.4%27%3E%3Cpath%20d%3D%27M0%200h42v44H0V0zm1%201h40v20H1V1zM0%2023h20v20H0V23zm22%200h20v20H22V23z%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]">
-      <div className="m-7 flex max-md:scale-55 gap-2 bg-red-800/60 opacity-90 font-extrabold text-2xl text-amber-100 z-10 top-35 p-2 border-4 border-[#3f3e3e]">
+      {/* <div className="m-7 flex hidden max-md:scale-55 gap-2 bg-red-800/60 opacity-90 font-extrabold text-2xl text-amber-100 z-10 top-35 p-2 border-4 border-[#3f3e3e]">
         <a className='underline bg-red-800/50 hover:animate-bounce cursor-pointer text-green-200'href='#web'>Websites</a> &
         <a  className='underline bg-red-800/50  hover:animate-bounce cursor-pointer text-blue-200 scroll-smooth' href="#happy">games</a>
-      </div>
-       <h1 id="web" className="text-green-100  px-5 opacity-80 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 m-10">Our Websites</h1>
+      </div> */}
+      <h1 className='text-green-200/60 text-3xl m-6 font-extrabold font-sans bg-gray-500 p-2 rounded-xl  px-5 flex gap-2'>Welcome to <h1 className='text-black/60'> Sleepy</h1> <h1 className="text-green-900/80">Panda</h1></h1>
 
+<Image src={img} alt='sleepy panda logo' className='size-40 rounded-2xl border-gray-600 border-4'></Image>
+
+       <div id="web" className='flex my-10 gap-4' >
+        <h1  className="text-blue-100  px-5 opacity-60 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5 ">Our Websites</h1>
+       <h1 className='text-green-200 font-bold opacity-75'>or</h1>
+        <Link href="#happy" className="text-green-100 flex gap-2  px-5 opacity-80 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5  hover:scale-110 cursor-pointer">Our Games<div className='text-2xl animate-hover2 hover:scale-90 cursor-pointer opacity-70'><FaAngleDoubleDown /></div></Link>
+
+       </div>
       <div className="grid max-md:m-4   md:grid-cols-2 gap-8 max-w-4xl mx-auto w-fit pb-10">
         {services.map((service, idx) => (
           <div
@@ -121,9 +131,12 @@ const Product_and_Services = () => {
           </div>
         ))}
       </div>
-
-    <h1 id="happy" className="text-green-100 px-5 opacity-80 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 m-10">Games</h1>
-
+       <div id="happy" className='flex gap-4 my-10' >
+          <Link href="#web" className="text-green-100 flex gap-2  px-3 opacity-80 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5 hover:scale-110 cursor-pointer">Our Websites<div className='text-2xl animate-hover2 hover:scale-90 cursor-pointer opacity-70'><FaAngleDoubleUp /></div></Link>
+               <h1 className='text-green-200 font-bold opacity-75'>or</h1>
+        <h1  className="text-blue-100   opacity-60 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5 px-7">Our Games</h1>
+      
+       </div>
   <div className="grid max-md:m-4    amd:grid-cols-2 gap-8 max-w-4xl mx-auto w-fit pb-10">
         {Games.map((service, idx) => (
           <div

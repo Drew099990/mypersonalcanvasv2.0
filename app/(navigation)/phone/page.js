@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect } from 'react'
-import { FaPage4, FaPhone, FaPowerOff } from 'react-icons/fa'
+import { FaArrowDown, FaPage4, FaPhone, FaPowerOff } from 'react-icons/fa'
 import { useState } from 'react'
 import Image from 'next/image'
 import img from "../../../public/sleepy.jpg"
@@ -20,20 +20,20 @@ useEffect(()=>{
 function selector (e){
     const selected = e.target.textContent
  switch(selected){
-    case "about":{
+    case "1-about":{
         setLogo(false)
         setMessage("about")
     }
         break;
-    case "skills":{
+    case "3-skills":{
         setLogo(false)
         setMessage("skills")};
         break;
-    case "achive":{
+    case "5-achive":{
         setLogo(false)
         setMessage("achive")};
         break;
-    case "vision":{
+    case "8-vision":{
         setLogo(false)
         setMessage("vision")};
         break;
@@ -46,6 +46,10 @@ function selector (e){
     return (
     <div className="min-h-[85vh] flex flex-col justify-center items-center bg-[#d3d0d4] bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2742%27%20height%3D%2744%27%20viewBox%3D%270%200%2042%2044%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cg%20id%3D%27Page-1%27%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20id%3D%27brick-wall%27%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.4%27%3E%3Cpath%20d%3D%27M0%200h42v44H0V0zm1%201h40v20H1V1zM0%2023h20v20H0V23zm22%200h20v20H22V23z%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]">
 
+{!isON&&<h1 className='animate-bounce rounded-2xl font-bold text-blue-200 bg-gray-500 px-2 py-0.5 flex'>turn on the phone <div className='pt-1'><FaArrowDown></FaArrowDown></div></h1>
+}
+{isON&&<h1 className='animate-bounce rounded-2xl font-bold text-blue-200 bg-gray-500 px-2 py-0.5 flex'>click some ༼ つ ◕_◕ ༽つButtons</h1>
+}
         <div className='flex flex-col justify-start items-center h-[80vh] from-black via-black/20 to-black/90 bg-gradient-to-b w-70 p-2 rounded-2xl overflow-hidden '>
 d
             <div className="bg-yellow-200 flex-3/5 flex flex-col rounded-2xl overflow-hidden m-2">
@@ -55,7 +59,7 @@ d
  </div>  }<div className='text-black'>
     {message == "about" && <p className='flex justify-center items-center p-2'>i am a full stack web and game developer who focuses on bringing a unique creative feel to every project ,with 2 years experience perfecting and adapting new lessons along tthe way </p>}
     {message == "skills" && <p className='flex justify-center items-center p-2'>
-       i_mainly_utilze () {"{ if (main language) ༼ つ ◕_◕ ༽つ{javascript == "+"'react,next js'}   else         { python = 'django,pyautogui,kivy'; dart == 'flutter'; lua = 'love2d'; java = '';}}"}
+       i_mainly_utilze () {"{ if (main language) ༼ つ ◕_◕ ༽つ{javascript = "+"'react,next js'}   else         { python == 'django,pyautogui,kivy'; dart == 'flutter'; GDscript = 'Godot'; java == '';}}"}
         </p>}
     {message == "achive" && <p className='flex justify-center items-center p-2'> 1) ༼ つ ◕_◕ ༽つHCIA artificial intelligence certificate
         2) ------------༼ つ ◕_◕ ༽つkaggle intro to deep learning certificate</p>}

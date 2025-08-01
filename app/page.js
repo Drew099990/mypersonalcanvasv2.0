@@ -71,10 +71,10 @@ export default function Home() {
               <h1 className="font-bold max-md:scale-75 leading-tight  font-sans  text-green-800">panda</h1>
             </div>
           </Link>
-          <form className="p-4 min-md:py-10 max-md:py-0 flex flex-col gap-4"> 
+          <form className="p-4 min-md:py-10 max-md:py-0 flex flex-col gap-4 font-[6px]"> 
            
-           <h1 className="text-center underline font-bold opacity-85 opacity-80">leave a message</h1>
-           <div className="flex opacity-85"> <label>your Name :</label>
+           <h1 className="text-center underline font-bold text-3xl font-serif text-gray-200 opacity-75 rounded-t-xl p-2 mb-1 bg-[#2E2E2EFF]/100 ">leave a message</h1>
+           <div className="flex opacity-85 font-serif"> <label>your Name :</label>
             <input type="text" className=" h-10 m border-b-2 px-4 w-25"></input>
              <label>Email :</label>
             <input type="email" required className="border-b-2  h-10 mt-5 px-4"></input>
@@ -83,7 +83,7 @@ export default function Home() {
    </label></div>
             
           <div className="flex font-extrabold  justify-center items-center">  <input type="submit" className=" w-fit mt-8 border-y-2 px-2 opacity-85 hover:border-4"></input>
-           </div>  </form>
+           </div> <h1 className="rounded-b-xl p-2 bg-[#2E2E2EFF]/100 opacity-80"> </h1> </form>
           
           </div>
         </div>
