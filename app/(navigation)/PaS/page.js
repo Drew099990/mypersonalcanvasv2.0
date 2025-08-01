@@ -89,14 +89,14 @@ const Product_and_Services = () => {
         <a className='underline bg-red-800/50 hover:animate-bounce cursor-pointer text-green-200'href='#web'>Websites</a> &
         <a  className='underline bg-red-800/50  hover:animate-bounce cursor-pointer text-blue-200 scroll-smooth' href="#happy">games</a>
       </div> */}
-      <h1 className='text-green-200/60 text-3xl m-6 font-extrabold font-sans bg-gray-500 p-2 rounded-xl  px-5 flex gap-2'>Welcome to <h1 className='text-black/60'> Sleepy</h1> <h1 className="text-green-900/80">Panda</h1></h1>
+      <h1 className='text-green-200/60 text-3xl m-6 border-4 border-gray-700/80 font-extrabold font-sans bg-gray-500 p-2 rounded-xl  px-5 flex gap-2'>Welcome to <h1 className='text-black/60'> Sleepy</h1> <h1 className="text-green-900/80">Panda</h1></h1>
 
 <Image src={img} alt='sleepy panda logo' className='size-40 rounded-2xl border-gray-600 border-4'></Image>
 
        <div id="web" className='flex my-10 gap-4' >
         <h1  className="text-blue-100  px-5 opacity-60 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5 ">Our Websites</h1>
        <h1 className='text-green-200 font-bold opacity-75'>or</h1>
-        <Link href="#happy" className="text-green-100 flex gap-2  px-5 opacity-80 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5  hover:scale-110 cursor-pointer">Our Games<div className='text-2xl animate-hover2 hover:scale-90 cursor-pointer opacity-70'><FaAngleDoubleDown /></div></Link>
+        <Link href="#happy" className="text-green-100 flex gap-2 font-sans  px-5 opacity-80 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5  hover:scale-110 cursor-pointer">Our Games<div className='text-2xl animate-hover2 hover:scale-90 cursor-pointer opacity-70'><FaAngleDoubleDown /></div></Link>
 
        </div>
       <div className="grid max-md:m-4   md:grid-cols-2 gap-8 max-w-4xl mx-auto w-fit pb-10">
@@ -114,11 +114,11 @@ const Product_and_Services = () => {
                   height={60}
                   alt={service.title}
                 />
-                <h2 className="text-xl opacity-90 font-bold text-green-200 underline underline-offset-4">
+                <h2 className="text-xl font-sans opacity-90 font-bold text-green-200 underline underline-offset-4">
                   {service.title}
                 </h2>
               </div>
-              <p className="text-gray-200 mb-2">{service.description}</p>
+              <p className="text-gray-200 mb-2 font-serif">{service.description}</p>
               <a className='flex gap-1' href={service.mylink}>check it out  --------------------------༼ つ ◕_◕ ༽つ<h1 className='hover:text-gray-400'>Here</h1></a>
               <h3 className="font-bold text-lg text-gray-100 mb-1">Features:</h3>
               <ul className="list-disc pl-5 text-gray-300 space-y-1">
@@ -132,7 +132,7 @@ const Product_and_Services = () => {
         ))}
       </div>
        <div id="happy" className='flex gap-4 my-10' >
-          <Link href="#web" className="text-green-100 flex gap-2  px-3 opacity-80 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5 hover:scale-110 cursor-pointer">Our Websites<div className='text-2xl animate-hover2 hover:scale-90 cursor-pointer opacity-70'><FaAngleDoubleUp /></div></Link>
+          <Link href="#web" className="text-green-100 flex gap-2 font-sans px-3 opacity-80 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5 hover:scale-110 cursor-pointer">Our Websites<div className='text-2xl animate-hover2 hover:scale-90 cursor-pointer opacity-70'><FaAngleDoubleUp /></div></Link>
                <h1 className='text-green-200 font-bold opacity-75'>or</h1>
         <h1  className="text-blue-100   opacity-60 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5 px-7">Our Games</h1>
       
@@ -152,11 +152,11 @@ const Product_and_Services = () => {
                   height={60}
                   alt={service.title}
                 />
-                <h2 className="text-xl font-bold text-green-200 opacity-80 underline underline-offset-4">
+                <h2 className="text-xl font-serif font-bold text-green-200 opacity-80 underline underline-offset-4">
                   {service.title}
                 </h2>
               </div>
-              <p className="text-gray-200 mb-2">{service.description}</p>
+              <p className="text-gray-200 mb-2 font-sans">{service.description}</p>
               <a className='flex gap-1' href={service.mylink}>check it out  --------------------------༼ つ ◕_◕ ༽つ<h1 className='hover:text-gray-400 '>Here</h1></a>
               <h3 className="font-bold text-lg text-gray-100 mb-1">Features:</h3>
               <ul className="list-disc pl-5 text-gray-300 space-y-1">
