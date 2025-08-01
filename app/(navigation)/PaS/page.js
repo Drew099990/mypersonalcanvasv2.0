@@ -52,14 +52,14 @@ export default function Home() {
 
         <div className="bg-[#2E2E2EFF]/100  mx-5 max-md:scale-70 max-md:flex-col-reverse max-md:h-fit text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-w-fit fixed max-md:top-[80px] min-md:top-[220px]">
 
-          <div className="flex-1/3  gap-y-4 py-5 justify-baseline items-start p-4 font-bold  flex flex-col">
+          <div className="flex-1/3  gap-y-4 py-5 justify-baseline items-start p-4 font-bold  flex flex-col font-sans">
           
           <h1 className="underline underline-offset-8">contact info</h1>
-         <a className=" mt-3 cursor-pointer text-[11px]" href="tel: +260777290515">founder: Andrew muyunda</a>
+         <a className="hover:scale-110 mt-3 cursor-pointer text-[11px]" href="tel: +260777290515">Founder: Andrew muyunda</a>
         
-        <a className="   cursor-pointer text-[11px]" href="mailto: andrewmmuyunda777@gmail.com">email : andrewmmuyunda777@gmail.com</a>
-         <a className="cursor-pointer text-[11px]" href="tel: +260777290515">tel :  +260777290515</a>
-         <a className="cursor-pointer text-[11px]" href="mailto: andrewmmuyunda777@gmail.com">page : andrewmmuyunda777@gmail.com</a>
+        <a className=" hover:scale-110  cursor-pointer text-[11px]" href="mailto: andrewmmuyunda777@gmail.com">Email : andrewmmuyunda777@gmail.com</a>
+         <a className="hover:scale-110 cursor-pointer text-[11px]" href="tel: +260777290515">Tel :  +260777290515</a>
+         <a className="hover:scale-110 cursor-pointer text-[11px]" href="https://www.facebook.com/profile.php?id=61577912963020">Our Facebook Page :Sleepy Panda</a>
            <a className="cursor-none text-[11px]" >location : Kitwe , Zambia</a>
         </div>
           
