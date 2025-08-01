@@ -11,7 +11,7 @@ const stories = [
     title: "The Red Game",
     client: "community",
     description:
-      " almost wraping up the game a few more feature to be added and it will be ready for play testing -----------------------------------༼ つ ◕_◕ ༽つMAY ,as the first order of business.",
+      " almost wraping up the game a few more feature to be added and it will be ready for play testing -----------------------------------༼ つ ◕_◕ ༽つ.",
     date: "31 july 2025",
   },
 
