@@ -24,7 +24,7 @@ export default function Home() {
         /
       </h1>
       <Image
-        className="fixed z-60 max-md:hidden border rounded-2xl max-sm:bottom-40 min-sm:bottom-50 right-7 opacity-85 text-6xl"
+        className="fixed z-60 max-md:hidden hover:scale-250 border rounded-2xl max-sm:bottom-40 min-sm:bottom-50 right-7 opacity-85 text-6xl"
         src={img}
         width={70}
         height={70}
