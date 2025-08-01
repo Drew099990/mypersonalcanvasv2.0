@@ -47,6 +47,7 @@ const services = [
       'Countless fully packed courses ',
       'Automation idea generator',
       
+
     ],
     img: img,
     status:false,
@@ -95,6 +96,7 @@ const Product_and_Services = () => {
 
 <Image src={img} alt='sleepy panda logo' className='size-40 rounded-2xl border-gray-600 border-4'></Image>
 
+
        <div id="web" className='flex my-10 gap-4' >
         <h1  className="text-blue-100  px-5 opacity-60 py-1  border-green border ring-4 rounded-xl  ring-gray-800  font-bold italic text-balance bg-gray-500 mt-5 ">Our Websites</h1>
        <h1 className='text-green-200 font-bold opacity-75'>or</h1>
@@ -107,6 +109,7 @@ const Product_and_Services = () => {
             key={idx}
             className="bg-[#2E2E2EFF]/100 text-gray-300 flex border-[#948f8f] border-4 ring-4 ring-black min-h-[220px] min-w-fit rounded-2xl shadow-xl p-6 flex-col justify-between"
           >
+
             <div>
               <div className="flex items-center gap-4 mb-3">
                 <Image

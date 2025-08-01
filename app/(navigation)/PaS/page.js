@@ -1,4 +1,5 @@
 
+
 import Image from "next/image";
 import img from "../../../public/sleepy.jpg"; // Adjust the path as necessary
 import Link from "next/link";
@@ -12,6 +13,7 @@ export default function Home() {
 
   
   return (
+
     <div>
       
    
@@ -44,6 +46,7 @@ export default function Home() {
       <h1 className="fixed top-60 right-40 max-md:scale-80 text-yellow-600/30 rotate-60 italic font-bold tracking-wider text-7xl">
         canvas
       </h1>
+
 
       <div className="w-screen flex justify-center items-start">
         <h1 className="fixed max-md:scale-50 bg-red-800/60 font-extrabold text-2xl text-amber-50 z-10 max-sm:top-28 min-sm:top-35 p-2 border-4 border-[#3f3e3e]">
@@ -90,4 +93,6 @@ export default function Home() {
       </div>
     </div>
   );
+
 }
+
