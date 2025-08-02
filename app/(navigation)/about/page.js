@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
 import { FaArrowDown } from 'react-icons/fa';
-
+import { Analytics } from "@vercel/analytics/next"
 const Page = () => {
   const [show, setShowScreen] = useState(false);
   const [powerON, setPowerON] = useState(false);
@@ -67,7 +67,7 @@ const Page = () => {
   return (
     <div className="min-h-[85vh] flex flex-col justify-center items-center bg-[#d3d0d4] bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2742%27%20height%3D%2744%27%20viewBox%3D%270%200%2042%2044%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cg%20id%3D%27Page-1%27%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20id%3D%27brick-wall%27%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.4%27%3E%3Cpath%20d%3D%27M0%200h42v44H0V0zm1%201h40v20H1V1zM0%2023h20v20H0V23zm22%200h20v20H22V23z%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]">
     <div className="fixed  p-5 bg-gray-200 text-gray-800 rounded-2xl border-gray-700 border-4 flex-col size-200 z-50 flex justify-center items-center min-[96rem]:hidden top-120  h-60 font-bold"> 
-        
+        <Analytics/>
         <div className="border-l-2  p-1 text-balance bg-gray-300 rounded-br-2xl">this window is requesting fullscreen view  ----------------------(╯°□°）╯︵ ┻━┻, would you like to grant permisson? (❁´◡`❁)</div>
         <button onClick={()=>{ document.documentElement.requestFullscreen()}} className="hover:border-dotted border rounded hover:bg-gray-400 hover:text-white hover:border-black text-gray-600 mt-7 px-3 p-1">make full screen</button></div>
       
