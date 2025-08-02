@@ -31,13 +31,13 @@ function selector (e){
         setLogo(false)
         setMessage("skills")};
         break;
-    case "5-vison":{
+    case "5-vision":{
         setLogo(false)
-        setMessage("achive")};
+        setMessage("vision")};
         break;
     case "8-achive":{
         setLogo(false)
-        setMessage("vision")};
+        setMessage("achive")};
         break;
     default:"";    
  }
