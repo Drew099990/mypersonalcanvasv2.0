@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/next"
 const Sleepy = () => {
     
     const [isON,setISON] = useState(false)
-    const button = ["1-about",2,"3-skills",4,"5-achive",6,7,"8-vision",9,]
+    const button = ["1-about",2,"3-skills",4,"5-vision",6,7,"8-achive",9,]
     const [logo ,setLogo] = useState(false);
     const [message,setMessage] = useState("");
 
@@ -31,11 +31,11 @@ function selector (e){
         setLogo(false)
         setMessage("skills")};
         break;
-    case "5-achive":{
+    case "5-vison":{
         setLogo(false)
         setMessage("achive")};
         break;
-    case "8-vision":{
+    case "8-achive":{
         setLogo(false)
         setMessage("vision")};
         break;
@@ -67,8 +67,8 @@ d
        i_mainly_utilze () {"{ if (main language) ༼ つ ◕_◕ ༽つ{javascript = "+"'react,next js'}   else         { python == 'django,pyautogui,kivy'; dart == 'flutter'; GDscript = 'Godot'; java == '';}}"}
 
         </p>}
-    {message == "achive" && <p className='flex justify-center items-center p-2'> 1) ༼ つ ◕_◕ ༽つHCIA artificial intelligence certificate
-        2) ------------༼ つ ◕_◕ ༽つkaggle intro to deep learning certificate</p>}
+    {message == "achive" && <p className='flex justify-center items-center p-2'> 1) hmmmmm well ༼ つ ◕_◕ ༽つHCIA artificial intelligence certificate
+        2) ------------༼ つ ◕_◕ ༽つkaggle intro to deep learning certificate , and other stuff...</p>}
     {message == "vision" && <p className='flex justify-center items-center p-2 text-[12px]'> we simply  ༼ つ ◕_◕ ༽つ actually its actually just me yeaaaa my main goal is to make quality software that adds to one&#39;s wellbeing and overall i simply want to make software that makes people feel something and kick ass while doing it hopefully overtime we can touch more people (╯°□°）╯ with consent of cause (¬‿¬) .   </p>}
  </div>
  
