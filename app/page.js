@@ -92,6 +92,8 @@ const Product_and_Services = () => {
         <a  className='underline bg-red-800/50  hover:animate-bounce cursor-pointer text-blue-200 scroll-smooth' href="#happy">games</a>
       </div> */}
        <Analytics/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8563885250863599"
+     crossorigin="anonymous"></script>
       <div className='text-green-200/60 text-3xl m-6 border-4 border-gray-700/80 font-extrabold font-sans bg-gray-500 p-2 rounded-xl  px-5 flex gap-2 max-md:scale-85 text-balance'>Welcome to <h1 className='text-black/60'> Sleepy</h1> <h1 className="text-green-900/80">Panda</h1></div>
 
 <Image src={img} alt='sleepy panda logo' className='size-40 rounded-2xl border-gray-600 border-4'></Image>
