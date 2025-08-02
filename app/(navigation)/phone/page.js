@@ -59,7 +59,7 @@ d
 { isON?  <div className='h-[80%] bg-gray-300 w-60 size-50 flex justify-center items-center '>
    {logo == true && <div><Image className='size-fit rounded-2xl' alt='sleepy panda company logo on phone' src={img}></Image>
  </div>  }<div className='text-black'>
-    {message == "about" && <p className='flex justify-center items-center p-2'>i am a full stack web and game developer who focuses on bringing a unique creative feel to every project ,with 2 years experience perfecting and adapting new lessons along tthe way </p>}
+    {message == "about" && <p className='flex justify-center items-center p-2'>i am a full stack web and game developer who focuses on bringing a unique creative feel to every project ,with 2 years experience perfecting and adapting new lessons along the way </p>}
     {message == "skills" && <p className='flex justify-center items-center p-2'>
 
        i_mainly_utilze () {"{ if (main language) ༼ つ ◕_◕ ༽つ{javascript = "+"'react,next js'}   else         { python == 'django,pyautogui,kivy'; dart == 'flutter'; GDscript = 'Godot'; java == '';}}"}
